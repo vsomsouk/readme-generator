@@ -1,8 +1,6 @@
-# readme-generator
-
-# Deployed Link: https://github.com/vsomsouk/readme-generator
 
 # Title: README Generator
+Deployed Link: https://github.com/vsomsouk/readme-generator
 
 # Description:
 
