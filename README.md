@@ -1,6 +1,6 @@
 
 # Title: README Generator
-Deployed Link: https://github.com/vsomsouk/readme-generator
+GitHub Link: https://github.com/vsomsouk/readme-generator
 
 # Description:
 
@@ -14,6 +14,10 @@ Deployed Link: https://github.com/vsomsouk/readme-generator
  </ul>
  
  # Installation
+  <ul>
+  <li>git clone https://github.com/vsomsouk/readme-generator</li>
+  <li>cd index.js</li>
+ </ul>
  
  # Usage
  
