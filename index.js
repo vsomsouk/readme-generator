@@ -1,53 +1,65 @@
+const inquirer = require("inquirer");
+const fs = require ("fs");
+const util = require ("util");
 
-
+const writeFileAsync = util.promisify(fs.writeFile);
 
 function promptUser() {
     return inquirer.prompt([
       {
         type: "input",
-        name: "name",
+        name: "username",
         message: "What is your GitHub username?"
       },
       {
         type: "input",
-        name: "email",
-        message: "What is your email?"
+        name: "title",
+        message: "What is the project title?"
       },
       {
         type: "input",
-        name: "protect-title",
-        message: "What is your project title?"
+        name: "description",
+        message: "What is your description?"
       },
       {
         type: "input",
-        name: "url",
-        message: "Add in your URl to your project"
+        name: "installation",
+        message: "Installation"
       },
       {
-        type: "input",
+        type: "list",
         name: "license",
-        message: "What kind of license is this?"
+        message: "License",
+        choices: ["MIT", "Apache", "GPL"]
       },
       {
         type: "input",
         name: "contributors",
-        message: "Contributors?"
-      }
+        message: "Contributors"
+      },
       {
         type: "input",
         name: "test",
         message: "Tests?"
+      },
+      {
+        type: "input",
+        name: "questions",
+        message: "Questions"
       }
+    ])
+  };
 
-      promptUser()
+   promptUser()
     .then(function(answers) {
-    const html = generateHTML(answers);
+    const info = generateHTML(answers);
 
-    return writeFileAsync("readme", html);
+    return writeFileAsync("README.md", readme);
     })
     .then(function() {
-    console.log("A README has successfully been created);
+    console.log("A README has successfully been created");
      })
      .catch(function(err) {
     console.log(err);
-     });
+     }
+    )
