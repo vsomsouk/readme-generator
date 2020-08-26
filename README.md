@@ -1,31 +1,14 @@
 
-# Title: README Generator
-GitHub Link: https://github.com/vsomsouk/readme-generator
 
-# Description:
+//do I put info here?
+# Username: vsomsouk
 
-# Table of Contents
-<ul>
-  <li>Installation</li>
-  <li>Usage</li>
-  <li>License</li>
-  <li>Contributors</li>
-  <li>Tests</li>
- </ul>
- 
- # Installation
-  <ul>
-  <li>git clone https://github.com/vsomsouk/readme-generator</li>
-  <li>cd index.js</li>
- </ul>
- 
- # Usage
- 
- # License
- 
- # Contributors
- 
- # Tests
- 
- # Questions
- 
+# Title: readme
+
+## Description: readme generator app
+
+## Installation: npm i
+
+## License: MIT
+
+## Contributors: vanida

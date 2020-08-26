@@ -36,30 +36,36 @@ function promptUser() {
         type: "input",
         name: "contributors",
         message: "Contributors"
-      },
-      {
-        type: "input",
-        name: "test",
-        message: "Tests?"
-      },
-      {
-        type: "input",
-        name: "questions",
-        message: "Questions"
       }
     ])
   };
 
-   promptUser()
-    .then(function(answers) {
-    const info = generateHTML(answers);
+  function generateReadMe(answers) {
+    return `
+
+//do I put info here?
+# Username: ${answers.username}
+
+# Title: ${answers.title}
+
+## Description: ${answers.description}
+
+## Installation: ${answers.installation}
+
+## License: ${answers.license}
+
+## Contributors: ${answers.contributors}`
+}
+
+promptUser()
+  .then(function(answers) {
+    const readme = generateReadMe(answers);
 
     return writeFileAsync("README.md", readme);
-    })
-    .then(function() {
+  })
+  .then(function () {
     console.log("A README has successfully been created");
-     })
-     .catch(function(err) {
+  })
+  .catch(function (err) {
     console.log(err);
-     }
-    )
+  });
