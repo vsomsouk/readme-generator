@@ -1,6 +1,3 @@
-
-
-
 # Title: ReadMe Generator
 
 ## Description: Using node.js to generate a readme file.
@@ -20,7 +17,8 @@ npm install
 node index.js
 
 ## License
-MIT
+MIT <br>
+<img alt="NPM" src="https://img.shields.io/npm/l/express">
 
 ## Contributors
 Vanida
@@ -29,5 +27,6 @@ Vanida
 * npm run test
 
 ## Questions:
-If you have any questions, please feel free to email me at vsomsouk@gmail.com.
-<img src="./src/bioimg.jpg">
+If you have any questions, please feel free to email me at vsomsouk@gmail.com. <br>
+
+<img src="./src/bioimg.jpg" width="200" height="200">
