@@ -8,11 +8,6 @@ function promptUser() {
     return inquirer.prompt([
       {
         type: "input",
-        name: "username",
-        message: "What is your GitHub username?"
-      },
-      {
-        type: "input",
         name: "title",
         message: "What is the project title?"
       },
@@ -25,6 +20,11 @@ function promptUser() {
         type: "input",
         name: "installation",
         message: "Installation"
+      },
+      {
+        type: "input",
+        name: "usage",
+        message: "Usage"
       },
       {
         type: "list",
@@ -43,18 +43,38 @@ function promptUser() {
   function generateReadMe(answers) {
     return `
 
-//do I put info here?
-# Username: ${answers.username}
 
 # Title: ${answers.title}
 
 ## Description: ${answers.description}
 
-## Installation: ${answers.installation}
+## Table of Contents
+* Installation
+* Usage
+* License
+* Contributors
+* Tests
+* Questions
 
-## License: ${answers.license}
+## Installation
+${answers.installation}
 
-## Contributors: ${answers.contributors}`
+## Usage
+${answers.usage}
+
+## License
+${answers.license}
+
+## Contributors
+${answers.contributors}
+
+## Tests
+* npm run test
+
+## Questions:
+If you have any questions, please feel free to email me at vsomsouk@gmail.com.
+<img src="./src/bioimg.jpg">
+`
 }
 
 promptUser()

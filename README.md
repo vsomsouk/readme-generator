@@ -1,14 +1,33 @@
 
 
-//do I put info here?
-# Username: vsomsouk
 
-# Title: readme
+# Title: ReadMe Generator
 
-## Description: readme generator app
+## Description: Using node.js to generate a readme file.
 
-## Installation: npm i
+## Table of Contents
+* Installation
+* Usage
+* License
+* Contributors
+* Tests
+* Questions
 
-## License: MIT
+## Installation
+npm install
 
-## Contributors: vanida
+## Usage
+node index.js
+
+## License
+MIT
+
+## Contributors
+Vanida
+
+## Tests
+* npm run test
+
+## Questions:
+If you have any questions, please feel free to email me at vsomsouk@gmail.com.
+<img src="./src/bioimg.jpg">
