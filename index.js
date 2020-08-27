@@ -43,10 +43,10 @@ function promptUser() {
   function generateReadMe(answers) {
     return `
 
+${answers.title}
 
-# Title: ${answers.title}
-
-## Description: ${answers.description}
+## Description
+${answers.description}
 
 ## Table of Contents
 * Installation
@@ -73,7 +73,8 @@ ${answers.contributors}
 
 ## Questions:
 If you have any questions, please feel free to email me at vsomsouk@gmail.com.
-<img src="./src/bioimg.jpg">
+
+<img src="./src/bioimg.jpg" width="200" height="200">
 `
 }
 
