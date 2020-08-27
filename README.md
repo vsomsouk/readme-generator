@@ -1,4 +1,4 @@
-ReadMe Generator
+# ReadMe Generator
 
 ## Description
 Using node.js to generate a readme file.
